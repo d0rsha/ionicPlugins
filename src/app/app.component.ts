@@ -31,6 +31,7 @@ export class AppComponent {
 
 
       // Only enable in production environent 
+      // envrionment variable is set to normal or prod during compile-time 
       if (environment.production) {
         this.fpm.setPerformanceCollectionEnabled(true);
         this.fpm.setAnalyticsCollectionEnabled(true);
