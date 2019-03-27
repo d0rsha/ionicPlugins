@@ -1,0 +1,8 @@
+{
+  "name": "miniApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "4b0532f8"
+}
