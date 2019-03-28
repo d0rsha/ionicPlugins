@@ -21,10 +21,11 @@ export class AppComponent {
   }
 
   initializeApp() {
-    this.platform.ready().then(() => {
+    this.platform.ready().then((readySource) => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
 
+      console.log('Platform.ready(): ', readySource)
       console.log(window)
       // App is initialized here !
       this.fpm = window['FirebasePlugin']
@@ -36,11 +37,11 @@ export class AppComponent {
         this.fpm.setPerformanceCollectionEnabled(true);
         this.fpm.setAnalyticsCollectionEnabled(true);
   
-        this.fpm.startTrace('platform_ready_to_first_page', success => {
+        /*this.fpm.startTrace('platform_ready_to_first_page', success => {
           console.log(success)
         }, error => {
           console.log(error)
-        })  
+        })  */
       }
     });
   }

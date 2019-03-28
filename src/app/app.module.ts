@@ -16,6 +16,9 @@ import { SQLite } from '@ionic-native/sqlite/ngx';
 import { BatteryStatus } from '@ionic-native/battery-status/ngx';
 import { ImagePicker } from '@ionic-native/image-picker/ngx';
 import { Camera } from '@ionic-native/camera/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
+
 
 
 @NgModule({
@@ -30,6 +33,8 @@ providers: [
     BatteryStatus,
     SQLite,
     Camera,
+    Geolocation,
+    FingerprintAIO,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
