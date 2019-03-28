@@ -18,6 +18,7 @@ import { ImagePicker } from '@ionic-native/image-picker/ngx';
 import { Camera } from '@ionic-native/camera/ngx';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio/ngx';
+import { HTTP } from '@ionic-native/http/ngx';
 
 
 
@@ -35,6 +36,7 @@ providers: [
     Camera,
     Geolocation,
     FingerprintAIO,
+    HTTP,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
