@@ -8,5 +8,5 @@ ionic cordova run <android|ios>
 ```
 
 
-adb -s emulator-5554 install -r "C:\Users\andvre\Documents\plugins\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk"
+adb -s emulator-5554 install -r "C:\Users\andvre\Documents\plugins\platforms\android\app\build\outputs\apk\debug\app-debug.apk"
 
