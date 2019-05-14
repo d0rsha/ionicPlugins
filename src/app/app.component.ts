@@ -29,7 +29,6 @@ export class AppComponent {
 
       window["ReportFullyDrawn"].reportFullyDrawn();
       window["ReportFullyDrawn"].printInfo();
-      // this.makeHttpRequest()
     });
   }
 
